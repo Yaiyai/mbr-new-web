@@ -1,19 +1,12 @@
-let baseURL = 'https://mbr-cms.herokuapp.com/api/'
+import { fetchMaquinas, fetchCompany } from './fetch.js'
+import { setNav, setLogo } from './nav.js'
 
-window.onload = () => {
-	fetchMaquinas()
-	fetchCompany()
-}
+window.onload = async () => {
+	await fetchMaquinas()
+	await fetchCompany()
+	await setNav()
 
-const fetchMaquinas = async () => {
-	await fetch(`${baseURL}maquinaria`)
-		.then((data) => data.json())
-		.then((data) => localStorage.setItem('maquinas', JSON.stringify(data.data)))
-		.catch((err) => console.log(err))
-}
-const fetchCompany = async () => {
-	await fetch(`${baseURL}company`)
-		.then((data) => data.json())
-		.then((data) => localStorage.setItem('company', JSON.stringify(data.company[0])))
-		.catch((err) => console.log(err))
+	window.onscroll = () => {
+		setLogo()
+	}
 }

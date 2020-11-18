@@ -1,3 +1,4 @@
-body {
-	background-color: red;
-}
+@import './variables/_variables.scss';
+@import './global/_global.scss';
+@import './mixins/_mixins.scss';
+@import './parts/_parts.scss';

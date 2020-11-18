@@ -1,2 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700;900&display=swap");
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  color: #414141; }
+
+main {
+  height: 2000px; }
+
+img {
+  display: block;
+  width: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: none; }
+    ul li a {
+      display: block;
+      text-decoration: none; }
+
+.desktop-nav {
+  background-color: #343434;
+  padding: 24px 0; }
+  .desktop-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .desktop-nav .container > div {
+      display: flex;
+      align-items: center; }
+    .desktop-nav .container ul {
+      display: flex; }
+      .desktop-nav .container ul li a {
+        font-size: 0.75rem;
+        line-height: calc(0.75rem + 8px);
+        color: white; }
+        .desktop-nav .container ul li a:hover {
+          color: #efaf94;
+          text-decoration: underline; }
+      .desktop-nav .container ul.left a {
+        margin-right: 24px; }
+      .desktop-nav .container ul.right a {
+        margin-left: 24px; }
+    .desktop-nav .container #nav-logo {
+      width: 320px;
+      height: 130px;
+      margin-bottom: 0;
+      margin-right: 24px;
+      overflow: hidden;
+      /*Chrome, Safari*/
+      -webkit-transition: height 0.1s ease-in;
+      /*Firefox*/
+      -moz-transition: height 0.1s ease-in;
+      /*Opera*/
+      -o-transition: height 0.1s ease-in;
+      /*Standard*/
+      transition: height 0.1s ease-in;
+      /*Chrome, Safari*/
+      -webkit-transition: width 0.1s ease-in;
+      /*Firefox*/
+      -moz-transition: width 0.1s ease-in;
+      /*Opera*/
+      -o-transition: width 0.1s ease-in;
+      /*Standard*/
+      transition: width 0.1s ease-in; }
+      .desktop-nav .container #nav-logo img {
+        height: 100%;
+        object-fit: contain;
+        object-position: center; }
+    .desktop-nav .container .rrss-buttons {
+      margin-left: 24px; }
+      .desktop-nav .container .rrss-buttons .rrss-icon {
+        margin-left: calc(24px / 3);
+        color: white;
+        font-family: "FontAwesome";
+        font-size: 20px; }
+        .desktop-nav .container .rrss-buttons .rrss-icon:hover {
+          color: #efaf94;
+          text-decoration: underline; }
+        .desktop-nav .container .rrss-buttons .rrss-icon.facebook-btn::after {
+          content: '\f082'; }
+        .desktop-nav .container .rrss-buttons .rrss-icon.twitter-btn::after {
+          content: '\f081'; }
+        .desktop-nav .container .rrss-buttons .rrss-icon.instagram-btn::after {
+          content: '\f16d'; }
+        .desktop-nav .container .rrss-buttons .rrss-icon.linkedin-btn::after {
+          content: '\f08c'; }
+  .desktop-nav.scrolled {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px solid #1d612c; }
+    .desktop-nav.scrolled .container ul li a {
+      color: #1d612c; }
+      .desktop-nav.scrolled .container ul li a:hover {
+        color: #efaf94; }
+    .desktop-nav.scrolled .container #nav-logo {
+      width: 160px;
+      height: 65px; }
+    .desktop-nav.scrolled .rrss-buttons .rrss-icon {
+      color: #1d612c; }
