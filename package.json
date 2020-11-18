@@ -2,7 +2,7 @@
   "name": "mbr-new-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node-sass -o styles/css styles/sass/custom-style.scss -w"
